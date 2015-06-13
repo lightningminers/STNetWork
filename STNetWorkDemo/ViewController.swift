@@ -24,7 +24,7 @@ class ViewController: UIViewController{
     
     @IBAction func sendGetHttp(sender: UIButton) {
         var url:String = "http://lcepy.github.io";
-        STNetWork.request(HTTPMETHOD.GET.rawValue, url: url, success: { (dataString, data, response) -> Void in
+        STNetwork.request(HTTPMETHOD.GET.rawValue, url: url, success: { (dataString, data, response) -> Void in
             println(dataString)
         }) { (error) -> Void in
             println(error)
@@ -40,7 +40,7 @@ class ViewController: UIViewController{
         citys["city"] = "北京"
         var header:Dictionary<String,AnyObject> = Dictionary<String,AnyObject>()
         header["apikey"] = "bce358f5243e78bad9ebd6da21f742d1"
-        STNetWork.request(HTTPMETHOD.GET.rawValue, url: url, params: citys, header: header, success: { (dataString, data, response) -> Void in
+        STNetwork.request(HTTPMETHOD.GET.rawValue, url: url, params: citys, header: header, success: { (dataString, data, response) -> Void in
             println(dataString)
         }) { (error) -> Void in
             println(error)
@@ -55,7 +55,7 @@ class ViewController: UIViewController{
         var header:Dictionary<String,AnyObject> = Dictionary<String,AnyObject>()
         header["Content-Type"] = "application/x-www-form-urlencoded"
         header["apikey"] = "bce358f5243e78bad9ebd6da21f742d1"
-        STNetWork.request(HTTPMETHOD.POST.rawValue, url: url, params: ["urlencoded":httpArg], header: header, success: { (dataString, data, response) -> Void in
+        STNetwork.request(HTTPMETHOD.POST.rawValue, url: url, params: ["urlencoded":httpArg], header: header, success: { (dataString, data, response) -> Void in
             println(dataString)
         }) { (error) -> Void in
             println(error)
@@ -69,7 +69,7 @@ class ViewController: UIViewController{
         var header:Dictionary<String,AnyObject> = Dictionary<String,AnyObject>()
         header["Content-Type"] = "application/x-www-form-urlencoded"
         header["apikey"] = "bce358f5243e78bad9ebd6da21f742d1"
-        STNetWork.request(HTTPMETHOD.POST.rawValue, url: url, success: { (dataString, data, response) -> Void in
+        STNetwork.request(HTTPMETHOD.POST.rawValue, url: url, success: { (dataString, data, response) -> Void in
             println(dataString)
         }) { (error) -> Void in
             println(error)
@@ -83,7 +83,7 @@ class ViewController: UIViewController{
         let url:String = "http://pitayaswift.sinaapp.com/pitaya.php"
         //模拟表单提交
         let fileType:STFType = STFType(name: "mage-gnome01-large", type: "jpg")
-        STNetWork.upload(url, type: fileType, success: { (data, response) -> Void in
+        STNetwork.upload(url, type: fileType, success: { (data, response) -> Void in
             println(NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil))
         }) { (error) -> Void in
                 println(error)
@@ -94,7 +94,7 @@ class ViewController: UIViewController{
     
     @IBAction func sendDownloadFile(sender: UIButton) {
         var url:String = "http://content.battlenet.com.cn/wow/media/screenshots/screenshot-of-the-day/warlords-of-draenor/warlords-of-draenor-ss0420-large.jpg"
-        STNetWork.download(url, success: { (url, response) -> Void in
+        STNetwork.download(url, success: { (url, response) -> Void in
             
         }) { (error) -> Void in
             

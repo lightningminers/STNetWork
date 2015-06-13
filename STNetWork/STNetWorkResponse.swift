@@ -8,7 +8,7 @@
 
 import UIKit
 
-class STNetWorkResponse: NSObject {
+class STNetworkResponse: NSObject {
     var httpResponse:NSHTTPURLResponse?
     var response:NSURLResponse?
     var responseHeader:Dictionary<NSObject,AnyObject>?

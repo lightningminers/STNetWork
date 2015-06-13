@@ -1,4 +1,4 @@
-##STNetWork
+##STNetwork
 
 > Tag 0.0.1
 
@@ -8,7 +8,7 @@
 ![](https://img.shields.io/github/license/mashape/apistatus.svg)
 ![](https://camo.githubusercontent.com/770175f6c01d89c84a020706126a9e6399ff76c4/68747470733a2f2f696d672e736869656c64732e696f2f636f636f61706f64732f702f4b696e676669736865722e7376673f7374796c653d666c6174)
 
-STNetWork is an HTTP networking library written in Swift
+STNetwork is an HTTP networking library written in Swift
 
 ##Requirements
 
@@ -29,9 +29,9 @@ STNetWork is an HTTP networking library written in Swift
 
 These values can be passed as the first argument of the STNetWork.request method:
 	
-	STNetWork.request(HTTPMETHOD.GET.rawValue, url:"http://lcepy.github.io")
+	STNetwork.request(HTTPMETHOD.GET.rawValue, url:"http://lcepy.github.io")
 	
-	STNetWork.request(HTTPMETHOD.POST.rawValue, url:"http://lcepy.github.io")
+	STNetwork.request(HTTPMETHOD.POST.rawValue, url:"http://lcepy.github.io")
 	
 ##File Struct
 
@@ -64,7 +64,7 @@ GET Request With URL-Encoded Params
     citys["city"] = "北京"
     var header:Dictionary<String,AnyObject> = Dictionary<String,AnyObject>()
     header["apikey"] = "bce358f5243e78bad9ebd6da21f742d1"
-    STNetWork.request(HTTPMETHOD.GET.rawValue, url: url, params: citys, header: header, success: { (dataString, data, response) -> Void in
+    STNetwork.request(HTTPMETHOD.GET.rawValue, url: url, params: citys, header: header, success: { (dataString, data, response) -> Void in
          println(dataString)
     }) { (error) -> Void in
          println(error)
@@ -79,7 +79,7 @@ POST Request With URL-Encoded Params
     var header:Dictionary<String,AnyObject> = Dictionary<String,AnyObject>()
     header["Content-Type"] = "application/x-www-form-urlencoded"
     header["apikey"] = "bce358f5243e78bad9ebd6da21f742d1"
-    STNetWork.request(HTTPMETHOD.POST.rawValue, url: url, params: ["urlencoded":httpArg], header: header, success: { (dataString, data, response) -> Void in
+    STNetwork.request(HTTPMETHOD.POST.rawValue, url: url, params: ["urlencoded":httpArg], header: header, success: { (dataString, data, response) -> Void in
         println(dataString)
     }) { (error) -> Void in
         println(error)
@@ -87,7 +87,7 @@ POST Request With URL-Encoded Params
     
 if your set Header Content-type equal "application/json",then STNetWork used NSJSONSerialization handler your params
 
-##STNetWorkResponse
+##STNetworkResponse
 
 Response with handler
 
@@ -98,7 +98,7 @@ Response with handler
 * getAllResponseCookie 获取当前response的cookie（return header Set-Cookie）
 * getResponseCookie 根据key返回一个cookie值 (return cookie value -single)
 
-##STNetWorkRequest
+##STNetworkRequest
 
 * setRequestHeader 设置header信息( set your request headers)
 * setRequestCookie 设置cookie (set cookie header Set-Cookie)
@@ -122,7 +122,7 @@ Response with handler
     
     @IBAction func sendGetHttp(sender: UIButton) {
         var url:String = "http://lcepy.github.io";
-        STNetWork.request(HTTPMETHOD.GET.rawValue, url: url, success: { (dataString, data, response) -> Void in
+        STNetwork.request(HTTPMETHOD.GET.rawValue, url: url, success: { (dataString, data, response) -> Void in
             println(dataString)
         }) { (error) -> Void in
             println(error)
@@ -138,7 +138,7 @@ Response with handler
         citys["city"] = "北京"
         var header:Dictionary<String,AnyObject> = Dictionary<String,AnyObject>()
         header["apikey"] = "bce358f5243e78bad9ebd6da21f742d1"
-        STNetWork.request(HTTPMETHOD.GET.rawValue, url: url, params: citys, header: header, success: { (dataString, data, response) -> Void in
+        STNetwork.request(HTTPMETHOD.GET.rawValue, url: url, params: citys, header: header, success: { (dataString, data, response) -> Void in
             println(dataString)
         }) { (error) -> Void in
             println(error)
@@ -153,7 +153,7 @@ Response with handler
         var header:Dictionary<String,AnyObject> = Dictionary<String,AnyObject>()
         header["Content-Type"] = "application/x-www-form-urlencoded"
         header["apikey"] = "bce358f5243e78bad9ebd6da21f742d1"
-        STNetWork.request(HTTPMETHOD.POST.rawValue, url: url, params: ["urlencoded":httpArg], header: header, success: { (dataString, data, response) -> Void in
+        STNetwork.request(HTTPMETHOD.POST.rawValue, url: url, params: ["urlencoded":httpArg], header: header, success: { (dataString, data, response) -> Void in
             println(dataString)
         }) { (error) -> Void in
             println(error)
@@ -167,7 +167,7 @@ Response with handler
         var header:Dictionary<String,AnyObject> = Dictionary<String,AnyObject>()
         header["Content-Type"] = "application/x-www-form-urlencoded"
         header["apikey"] = "bce358f5243e78bad9ebd6da21f742d1"
-        STNetWork.request(HTTPMETHOD.POST.rawValue, url: url, success: { (dataString, data, response) -> Void in
+        STNetwork.request(HTTPMETHOD.POST.rawValue, url: url, success: { (dataString, data, response) -> Void in
             println(dataString)
         }) { (error) -> Void in
             println(error)
@@ -181,7 +181,7 @@ Response with handler
         let url:String = "http://pitayaswift.sinaapp.com/pitaya.php"
         //模拟表单提交
         let fileType:STFType = STFType(name: "mage-gnome01-large", type: "jpg")
-        STNetWork.upload(url, type: fileType, success: { (data, response) -> Void in
+        STNetwork.upload(url, type: fileType, success: { (data, response) -> Void in
             println(NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil))
         }) { (error) -> Void in
                 println(error)
@@ -192,7 +192,7 @@ Response with handler
     
     @IBAction func sendDownloadFile(sender: UIButton) {
         var url:String = "http://content.battlenet.com.cn/wow/media/screenshots/screenshot-of-the-day/warlords-of-draenor/warlords-of-draenor-ss0420-large.jpg"
-        STNetWork.download(url, success: { (url, response) -> Void in
+        STNetwork.download(url, success: { (url, response) -> Void in
             
         }) { (error) -> Void in
             

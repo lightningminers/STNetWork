@@ -8,17 +8,17 @@
 
 import UIKit
 
-class STNetWorkManager: NSObject {
+class STNetworkManager: NSObject {
     let HTTPMethod:String!
     let success:((dataString:NSString!,data:NSData!,response:NSURLResponse!)-> Void)?
     let error:((error:NSError!)-> Void)?
     
     var HTTPUrl:String!
-    var STRequest:STNetWorkRequest!
+    var STRequest:STNetworkRequest!
     var task:NSURLSessionTask!
     var session:NSURLSession!
 
-    init(url:String,method:String,success:((dataString:NSString!,data:NSData!,response:NSURLResponse!)-> Void)? = nil,error:((error:NSError!)-> Void)? = nil,STRequest:STNetWorkRequest?) {
+    init(url:String,method:String,success:((dataString:NSString!,data:NSData!,response:NSURLResponse!)-> Void)? = nil,error:((error:NSError!)-> Void)? = nil,STRequest:STNetworkRequest?) {
         self.HTTPUrl = url
         self.HTTPMethod = method
         self.error = error
@@ -26,7 +26,7 @@ class STNetWorkManager: NSObject {
         if let _STRequest = STRequest{
             self.STRequest = _STRequest
         }else{
-            self.STRequest = STNetWorkRequest(HttpURL: NSURL(string: self.HTTPUrl)!)
+            self.STRequest = STNetworkRequest(HttpURL: NSURL(string: self.HTTPUrl)!)
             self.STRequest.HTTPMethod = self.HTTPMethod
         }
     }

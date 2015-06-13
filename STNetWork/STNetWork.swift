@@ -9,7 +9,7 @@
 import UIKit
 
 
-class STNetWork: NSObject {
+class STNetwork: NSObject {
     
     /**
     GET|POST 普通的
@@ -20,7 +20,7 @@ class STNetWork: NSObject {
     :param: error   <#error description#>
     */
     static func request(method:String,url:String,success:((dataString:NSString!,data:NSData!,response:NSURLResponse!)-> Void)? = nil,error:((error:NSError!)-> Void)? = nil)->Void{
-        let manager = STNetWorkManager(url: url, method: method,success: success, error: error, STRequest: nil)
+        let manager = STNetworkManager(url: url, method: method,success: success, error: error, STRequest: nil)
         manager.fire()
     }
     
@@ -36,9 +36,9 @@ class STNetWork: NSObject {
     static func request(method:String,url:String,params:Dictionary<String,AnyObject>,success:((dataString:NSString!,data:NSData!,response:NSURLResponse!)-> Void)? = nil,error:((error:NSError!)-> Void)? = nil)->Void{
         var HttpUrl:String! = url
         if method == HTTPMETHOD.GET.rawValue{
-            HttpUrl = HttpUrl+"?"+STNetWorkRequest.buildParams(params)
+            HttpUrl = HttpUrl+"?"+STNetworkRequest.buildParams(params)
         }
-        let manager = STNetWorkManager(url: HttpUrl, method: method, success: success, error: error, STRequest: nil)
+        let manager = STNetworkManager(url: HttpUrl, method: method, success: success, error: error, STRequest: nil)
         if method != HTTPMETHOD.GET.rawValue{
             manager.STRequest.STParams = params
         }
@@ -58,10 +58,10 @@ class STNetWork: NSObject {
     static func request(method:String,url:String,params:Dictionary<String,AnyObject>,header:Dictionary<String,AnyObject>,success:((dataString:NSString!,data:NSData!,response:NSURLResponse!)-> Void)? = nil,error:((error:NSError!)-> Void)? = nil)->Void{
         var HttpUrl:String! = url
         if method == HTTPMETHOD.GET.rawValue{
-            HttpUrl = HttpUrl+"?"+STNetWorkRequest.buildParams(params)
+            HttpUrl = HttpUrl+"?"+STNetworkRequest.buildParams(params)
         }
         println(HttpUrl)
-        let manager = STNetWorkManager(url: HttpUrl, method: method, success: success, error: error, STRequest: nil)
+        let manager = STNetworkManager(url: HttpUrl, method: method, success: success, error: error, STRequest: nil)
         manager.STRequest.setRequestHeader(header)
         if method != HTTPMETHOD.GET.rawValue{
             manager.STRequest.STParams = params
@@ -81,7 +81,7 @@ class STNetWork: NSObject {
         let codeName:String = "file"
         let fileUrl:String? =  NSBundle.mainBundle().pathForResource(type.fileName, ofType:type.fileType)
         if let _fileUrl = fileUrl{
-            let manager = STNetWorkUpLoadFileManager(url: url, files: nil, success: success, error: error, STRequest: nil)
+            let manager = STNetworkUpLoadFileManager(url: url, files: nil, success: success, error: error, STRequest: nil)
             let file = STFile(name: codeName, url: _fileUrl,data:nil)
             let header:Dictionary<String,AnyObject> = ["Content-Type":"multipart/form-data; boundary=\(boundary)"]
             manager.STRequest.setRequestHeader(header)
@@ -100,7 +100,7 @@ class STNetWork: NSObject {
     :param: error   <#error description#>
     */
     static func taskupload(URL:String,files:Array<STFile>,success:(data:NSData!,response:NSURLResponse!)-> Void,error:(error:NSError!)-> Void)-> Void{
-        let manager = STNetWorkUpLoadFileManager(url: URL,files:files, success: success, error: error, STRequest: nil)
+        let manager = STNetworkUpLoadFileManager(url: URL,files:files, success: success, error: error, STRequest: nil)
         manager.STRequest.HTTPMethod = HTTPMETHOD.GET.rawValue
         manager.fire()
     }
@@ -113,7 +113,7 @@ class STNetWork: NSObject {
     :param: error   <#error description#>
     */
     static func download(URL:String,success:(url:NSURL!,response:NSURLResponse!)-> Void,error:(error:NSError!)-> Void)->Void{
-        let manager = STNetWorkDownloadManager(URL: URL, success: success, error: error, STRequest: nil)
+        let manager = STNetworkDownloadManager(URL: URL, success: success, error: error, STRequest: nil)
         manager.STRequest.HTTPMethod = HTTPMETHOD.GET.rawValue
         manager.fire()
     }

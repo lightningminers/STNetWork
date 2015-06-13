@@ -8,21 +8,21 @@
 
 import UIKit
 
-class STNetWorkDownloadManager: NSObject {
+class STNetworkDownloadManager: NSObject {
     
     let HttpUrl:String!
     let success:((url:NSURL!,response:NSURLResponse!)->Void)?
     let error:((error:NSError!)->Void)?
-    var STRequest:STNetWorkRequest!
+    var STRequest:STNetworkRequest!
     
-    init(URL:String,success:((url:NSURL!,response:NSURLResponse!)->Void)?,error:((error:NSError!)->Void)?,STRequest:STNetWorkRequest?) {
+    init(URL:String,success:((url:NSURL!,response:NSURLResponse!)->Void)?,error:((error:NSError!)->Void)?,STRequest:STNetworkRequest?) {
         self.HttpUrl = URL
         self.success = success
         self.error = error
         if let _STRequest = STRequest{
             self.STRequest = _STRequest
         }else{
-            self.STRequest = STNetWorkRequest(HttpURL: NSURL(string: self.HttpUrl)!)
+            self.STRequest = STNetworkRequest(HttpURL: NSURL(string: self.HttpUrl)!)
         }
     }
     

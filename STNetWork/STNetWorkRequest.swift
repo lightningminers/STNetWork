@@ -32,7 +32,7 @@ extension String {
     }
 }
 
-class STNetWorkRequest:NSMutableURLRequest{
+class STNetworkRequest:NSMutableURLRequest{
     
     let STUserAgent: String = {
         if let info = NSBundle.mainBundle().infoDictionary {
@@ -160,7 +160,7 @@ class STNetWorkRequest:NSMutableURLRequest{
         var components: [(String, String)] = []
         for key in sorted(Array(parameters.keys), <) {
             let value: AnyObject! = parameters[key]
-            components += STNetWorkRequest.queryComponents(key, value)
+            components += STNetworkRequest.queryComponents(key, value)
         }
         return join("&", components.map{"\($0)=\($1)"} as [String])
     }
@@ -184,7 +184,7 @@ class STNetWorkRequest:NSMutableURLRequest{
                 components += queryComponents("\(key)", value)
             }
         } else {
-            components.extend([(STNetWorkRequest.escape(key), escape("\(value)"))])
+            components.extend([(STNetworkRequest.escape(key), escape("\(value)"))])
         }
         return components
     }
@@ -225,7 +225,7 @@ class STNetWorkRequest:NSMutableURLRequest{
         }
         println("set Content-Type --- empty")
         if let params = self._STParams{
-            body.appendData(STNetWorkRequest.buildParams(self._STParams!).STNSData)
+            body.appendData(STNetworkRequest.buildParams(self._STParams!).STNSData)
             return body
         }else{
             return body

@@ -33,14 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		172D49C11B19FBC9001DBADA /* STNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		172D49C11B19FBC9001DBADA /* STNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172D49C51B19FBC9001DBADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		172D49C61B19FBC9001DBADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172D49C81B19FBC9001DBADA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		172D49CB1B19FBC9001DBADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		172D49CD1B19FBC9001DBADA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		172D49D01B19FBC9001DBADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		172D49D61B19FBC9001DBADA /* STNetWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STNetWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		172D49D61B19FBC9001DBADA /* STNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		172D49DB1B19FBC9001DBADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		172D49DC1B19FBC9001DBADA /* StanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanTests.swift; sourceTree = "<group>"; };
 		17A42E571B2A73E100B1545A /* STNetWorkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNetWorkResponse.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1726B3FE1B1B5E1500A8CF17 /* STNetWork */ = {
+		1726B3FE1B1B5E1500A8CF17 /* STNetwork */ = {
 			isa = PBXGroup;
 			children = (
 				17EE04231B1D4F9C00EAF47A /* STNetWorkManager.swift */,
@@ -80,15 +80,15 @@
 				17A42E621B2AC86300B1545A /* STNetWorkDownloadManager.swift */,
 				17A42E641B2ACA3000B1545A /* STNetWorkUpLoadFileManager.swift */,
 			);
-			path = STNetWork;
+			path = STNetwork;
 			sourceTree = "<group>";
 		};
 		172D49B81B19FBC8001DBADA = {
 			isa = PBXGroup;
 			children = (
-				1726B3FE1B1B5E1500A8CF17 /* STNetWork */,
-				172D49C31B19FBC9001DBADA /* STNetWorkDemo */,
-				172D49D91B19FBC9001DBADA /* STNetWorkDemoTests */,
+				1726B3FE1B1B5E1500A8CF17 /* STNetwork */,
+				172D49C31B19FBC9001DBADA /* STNetworkDemo */,
+				172D49D91B19FBC9001DBADA /* STNetworkDemoTests */,
 				172D49C21B19FBC9001DBADA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,13 +96,13 @@
 		172D49C21B19FBC9001DBADA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				172D49C11B19FBC9001DBADA /* STNetWork.app */,
-				172D49D61B19FBC9001DBADA /* STNetWorkTests.xctest */,
+				172D49C11B19FBC9001DBADA /* STNetworking.app */,
+				172D49D61B19FBC9001DBADA /* STNetworkingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		172D49C31B19FBC9001DBADA /* STNetWorkDemo */ = {
+		172D49C31B19FBC9001DBADA /* STNetworkDemo */ = {
 			isa = PBXGroup;
 			children = (
 				172D49C61B19FBC9001DBADA /* AppDelegate.swift */,
@@ -113,6 +113,7 @@
 				17A42E5D1B2AC1C400B1545A /* mage-gnome01-large.jpg */,
 				172D49C41B19FBC9001DBADA /* Supporting Files */,
 			);
+			name = STNetworkDemo;
 			path = STNetWorkDemo;
 			sourceTree = "<group>";
 		};
@@ -124,12 +125,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		172D49D91B19FBC9001DBADA /* STNetWorkDemoTests */ = {
+		172D49D91B19FBC9001DBADA /* STNetworkDemoTests */ = {
 			isa = PBXGroup;
 			children = (
 				172D49DC1B19FBC9001DBADA /* StanTests.swift */,
 				172D49DA1B19FBC9001DBADA /* Supporting Files */,
 			);
+			name = STNetworkDemoTests;
 			path = STNetWorkDemoTests;
 			sourceTree = "<group>";
 		};
@@ -144,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		172D49C01B19FBC8001DBADA /* STNetWork */ = {
+		172D49C01B19FBC8001DBADA /* STNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 172D49E01B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetWork" */;
+			buildConfigurationList = 172D49E01B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetworking" */;
 			buildPhases = (
 				172D49BD1B19FBC8001DBADA /* Sources */,
 				172D49BE1B19FBC8001DBADA /* Frameworks */,
@@ -156,14 +158,14 @@
 			);
 			dependencies = (
 			);
-			name = STNetWork;
+			name = STNetworking;
 			productName = Stan;
-			productReference = 172D49C11B19FBC9001DBADA /* STNetWork.app */;
+			productReference = 172D49C11B19FBC9001DBADA /* STNetworking.app */;
 			productType = "com.apple.product-type.application";
 		};
-		172D49D51B19FBC9001DBADA /* STNetWorkTests */ = {
+		172D49D51B19FBC9001DBADA /* STNetworkingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 172D49E31B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetWorkTests" */;
+			buildConfigurationList = 172D49E31B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetworkingTests" */;
 			buildPhases = (
 				172D49D21B19FBC9001DBADA /* Sources */,
 				172D49D31B19FBC9001DBADA /* Frameworks */,
@@ -174,9 +176,9 @@
 			dependencies = (
 				172D49D81B19FBC9001DBADA /* PBXTargetDependency */,
 			);
-			name = STNetWorkTests;
+			name = STNetworkingTests;
 			productName = StanTests;
-			productReference = 172D49D61B19FBC9001DBADA /* STNetWorkTests.xctest */;
+			productReference = 172D49D61B19FBC9001DBADA /* STNetworkingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 172D49BC1B19FBC8001DBADA /* Build configuration list for PBXProject "STNetWork" */;
+			buildConfigurationList = 172D49BC1B19FBC8001DBADA /* Build configuration list for PBXProject "STNetworking" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -210,8 +212,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				172D49C01B19FBC8001DBADA /* STNetWork */,
-				172D49D51B19FBC9001DBADA /* STNetWorkTests */,
+				172D49C01B19FBC8001DBADA /* STNetworking */,
+				172D49D51B19FBC9001DBADA /* STNetworkingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,7 +268,7 @@
 /* Begin PBXTargetDependency section */
 		172D49D81B19FBC9001DBADA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 172D49C01B19FBC8001DBADA /* STNetWork */;
+			target = 172D49C01B19FBC8001DBADA /* STNetworking */;
 			targetProxy = 172D49D71B19FBC9001DBADA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -379,7 +381,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = STNetWorkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = STNetWork;
+				PRODUCT_NAME = STNetworking;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -392,7 +394,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = STNetWorkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = STNetWork;
+				PRODUCT_NAME = STNetworking;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
@@ -411,7 +413,7 @@
 				);
 				INFOPLIST_FILE = STNetWorkDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = STNetWorkTests;
+				PRODUCT_NAME = STNetworkingTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STNetWork.app/Stan";
 			};
 			name = Debug;
@@ -426,7 +428,7 @@
 				);
 				INFOPLIST_FILE = STNetWorkDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = STNetWorkTests;
+				PRODUCT_NAME = STNetworkingTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STNetWork.app/Stan";
 			};
 			name = Release;
@@ -434,7 +436,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		172D49BC1B19FBC8001DBADA /* Build configuration list for PBXProject "STNetWork" */ = {
+		172D49BC1B19FBC8001DBADA /* Build configuration list for PBXProject "STNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				172D49DE1B19FBC9001DBADA /* Debug */,
@@ -443,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		172D49E01B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetWork" */ = {
+		172D49E01B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				172D49E11B19FBC9001DBADA /* Debug */,
@@ -452,7 +454,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		172D49E31B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetWorkTests" */ = {
+		172D49E31B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetworkingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				172D49E41B19FBC9001DBADA /* Debug */,

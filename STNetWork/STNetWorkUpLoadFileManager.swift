@@ -29,16 +29,16 @@ public struct STFType{
     }
 }
 
-class STNetWorkUpLoadFileManager: NSObject{
+class STNetworkUpLoadFileManager: NSObject{
     
     let HttpUrl:String
     let success:((data:NSData!,response:NSURLResponse!)-> Void)?
     let error:((error:NSError!)-> Void)?
     
-    var STRequest:STNetWorkRequest!
+    var STRequest:STNetworkRequest!
     var files:Array<STFile>?
     
-    init(url:String,files:Array<STFile>?,success:((data:NSData!,response:NSURLResponse!)-> Void)? = nil,error:((error:NSError!)-> Void)? = nil,STRequest:STNetWorkRequest?) {
+    init(url:String,files:Array<STFile>?,success:((data:NSData!,response:NSURLResponse!)-> Void)? = nil,error:((error:NSError!)-> Void)? = nil,STRequest:STNetworkRequest?) {
         
         self.HttpUrl = url
         self.success = success
@@ -47,7 +47,7 @@ class STNetWorkUpLoadFileManager: NSObject{
         if let _STRequest = STRequest{
             self.STRequest = STRequest
         }else{
-            self.STRequest = STNetWorkRequest(HttpURL: NSURL(string: HttpUrl)!)
+            self.STRequest = STNetworkRequest(HttpURL: NSURL(string: HttpUrl)!)
         }
     }
     
