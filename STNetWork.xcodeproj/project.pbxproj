@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		172D49C71B19FBC9001DBADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D49C61B19FBC9001DBADA /* AppDelegate.swift */; };
+		172D49C91B19FBC9001DBADA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D49C81B19FBC9001DBADA /* ViewController.swift */; };
+		172D49CC1B19FBC9001DBADA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172D49CA1B19FBC9001DBADA /* Main.storyboard */; };
+		172D49CE1B19FBC9001DBADA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172D49CD1B19FBC9001DBADA /* Images.xcassets */; };
+		172D49D11B19FBC9001DBADA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172D49CF1B19FBC9001DBADA /* LaunchScreen.xib */; };
+		172D49DD1B19FBC9001DBADA /* StanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D49DC1B19FBC9001DBADA /* StanTests.swift */; };
+		17A42E581B2A73E100B1545A /* STNetWorkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A42E571B2A73E100B1545A /* STNetWorkResponse.swift */; };
+		17A42E5A1B2AA5FE00B1545A /* STNetWorkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A42E591B2AA5FE00B1545A /* STNetWorkRequest.swift */; };
+		17A42E5E1B2AC1C400B1545A /* mage-gnome01-large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17A42E5D1B2AC1C400B1545A /* mage-gnome01-large.jpg */; };
+		17A42E631B2AC86300B1545A /* STNetWorkDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A42E621B2AC86300B1545A /* STNetWorkDownloadManager.swift */; };
+		17A42E651B2ACA3000B1545A /* STNetWorkUpLoadFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A42E641B2ACA3000B1545A /* STNetWorkUpLoadFileManager.swift */; };
+		17EE04241B1D4F9C00EAF47A /* STNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE04231B1D4F9C00EAF47A /* STNetWorkManager.swift */; };
+		17EE04261B1D4FB500EAF47A /* STNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE04251B1D4FB500EAF47A /* STNetWork.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		172D49D71B19FBC9001DBADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 172D49B91B19FBC8001DBADA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 172D49C01B19FBC8001DBADA;
+			remoteInfo = Stan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		172D49C11B19FBC9001DBADA /* STNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		172D49C51B19FBC9001DBADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172D49C61B19FBC9001DBADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		172D49C81B19FBC9001DBADA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		172D49CB1B19FBC9001DBADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		172D49CD1B19FBC9001DBADA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		172D49D01B19FBC9001DBADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		172D49D61B19FBC9001DBADA /* STNetWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STNetWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		172D49DB1B19FBC9001DBADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172D49DC1B19FBC9001DBADA /* StanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanTests.swift; sourceTree = "<group>"; };
+		17A42E571B2A73E100B1545A /* STNetWorkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNetWorkResponse.swift; sourceTree = "<group>"; };
+		17A42E591B2AA5FE00B1545A /* STNetWorkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNetWorkRequest.swift; sourceTree = "<group>"; };
+		17A42E5D1B2AC1C400B1545A /* mage-gnome01-large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mage-gnome01-large.jpg"; sourceTree = "<group>"; };
+		17A42E621B2AC86300B1545A /* STNetWorkDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNetWorkDownloadManager.swift; sourceTree = "<group>"; };
+		17A42E641B2ACA3000B1545A /* STNetWorkUpLoadFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNetWorkUpLoadFileManager.swift; sourceTree = "<group>"; };
+		17EE04231B1D4F9C00EAF47A /* STNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNetWorkManager.swift; sourceTree = "<group>"; };
+		17EE04251B1D4FB500EAF47A /* STNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNetWork.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		172D49BE1B19FBC8001DBADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172D49D31B19FBC9001DBADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1726B3FE1B1B5E1500A8CF17 /* STNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				17EE04231B1D4F9C00EAF47A /* STNetWorkManager.swift */,
+				17EE04251B1D4FB500EAF47A /* STNetWork.swift */,
+				17A42E571B2A73E100B1545A /* STNetWorkResponse.swift */,
+				17A42E591B2AA5FE00B1545A /* STNetWorkRequest.swift */,
+				17A42E621B2AC86300B1545A /* STNetWorkDownloadManager.swift */,
+				17A42E641B2ACA3000B1545A /* STNetWorkUpLoadFileManager.swift */,
+			);
+			path = STNetWork;
+			sourceTree = "<group>";
+		};
+		172D49B81B19FBC8001DBADA = {
+			isa = PBXGroup;
+			children = (
+				1726B3FE1B1B5E1500A8CF17 /* STNetWork */,
+				172D49C31B19FBC9001DBADA /* STNetWorkDemo */,
+				172D49D91B19FBC9001DBADA /* STNetWorkDemoTests */,
+				172D49C21B19FBC9001DBADA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		172D49C21B19FBC9001DBADA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				172D49C11B19FBC9001DBADA /* STNetWork.app */,
+				172D49D61B19FBC9001DBADA /* STNetWorkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		172D49C31B19FBC9001DBADA /* STNetWorkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				172D49C61B19FBC9001DBADA /* AppDelegate.swift */,
+				172D49C81B19FBC9001DBADA /* ViewController.swift */,
+				172D49CA1B19FBC9001DBADA /* Main.storyboard */,
+				172D49CD1B19FBC9001DBADA /* Images.xcassets */,
+				172D49CF1B19FBC9001DBADA /* LaunchScreen.xib */,
+				17A42E5D1B2AC1C400B1545A /* mage-gnome01-large.jpg */,
+				172D49C41B19FBC9001DBADA /* Supporting Files */,
+			);
+			path = STNetWorkDemo;
+			sourceTree = "<group>";
+		};
+		172D49C41B19FBC9001DBADA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				172D49C51B19FBC9001DBADA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		172D49D91B19FBC9001DBADA /* STNetWorkDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				172D49DC1B19FBC9001DBADA /* StanTests.swift */,
+				172D49DA1B19FBC9001DBADA /* Supporting Files */,
+			);
+			path = STNetWorkDemoTests;
+			sourceTree = "<group>";
+		};
+		172D49DA1B19FBC9001DBADA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				172D49DB1B19FBC9001DBADA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		172D49C01B19FBC8001DBADA /* STNetWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172D49E01B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetWork" */;
+			buildPhases = (
+				172D49BD1B19FBC8001DBADA /* Sources */,
+				172D49BE1B19FBC8001DBADA /* Frameworks */,
+				172D49BF1B19FBC8001DBADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STNetWork;
+			productName = Stan;
+			productReference = 172D49C11B19FBC9001DBADA /* STNetWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		172D49D51B19FBC9001DBADA /* STNetWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172D49E31B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetWorkTests" */;
+			buildPhases = (
+				172D49D21B19FBC9001DBADA /* Sources */,
+				172D49D31B19FBC9001DBADA /* Frameworks */,
+				172D49D41B19FBC9001DBADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				172D49D81B19FBC9001DBADA /* PBXTargetDependency */,
+			);
+			name = STNetWorkTests;
+			productName = StanTests;
+			productReference = 172D49D61B19FBC9001DBADA /* STNetWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		172D49B91B19FBC8001DBADA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = xiangwenwen;
+				TargetAttributes = {
+					172D49C01B19FBC8001DBADA = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					172D49D51B19FBC9001DBADA = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 172D49C01B19FBC8001DBADA;
+					};
+				};
+			};
+			buildConfigurationList = 172D49BC1B19FBC8001DBADA /* Build configuration list for PBXProject "STNetWork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 172D49B81B19FBC8001DBADA;
+			productRefGroup = 172D49C21B19FBC9001DBADA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				172D49C01B19FBC8001DBADA /* STNetWork */,
+				172D49D51B19FBC9001DBADA /* STNetWorkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		172D49BF1B19FBC8001DBADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172D49CC1B19FBC9001DBADA /* Main.storyboard in Resources */,
+				172D49D11B19FBC9001DBADA /* LaunchScreen.xib in Resources */,
+				172D49CE1B19FBC9001DBADA /* Images.xcassets in Resources */,
+				17A42E5E1B2AC1C400B1545A /* mage-gnome01-large.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172D49D41B19FBC9001DBADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		172D49BD1B19FBC8001DBADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A42E651B2ACA3000B1545A /* STNetWorkUpLoadFileManager.swift in Sources */,
+				172D49C91B19FBC9001DBADA /* ViewController.swift in Sources */,
+				17A42E5A1B2AA5FE00B1545A /* STNetWorkRequest.swift in Sources */,
+				172D49C71B19FBC9001DBADA /* AppDelegate.swift in Sources */,
+				17A42E581B2A73E100B1545A /* STNetWorkResponse.swift in Sources */,
+				17EE04241B1D4F9C00EAF47A /* STNetWorkManager.swift in Sources */,
+				17A42E631B2AC86300B1545A /* STNetWorkDownloadManager.swift in Sources */,
+				17EE04261B1D4FB500EAF47A /* STNetWork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172D49D21B19FBC9001DBADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172D49DD1B19FBC9001DBADA /* StanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		172D49D81B19FBC9001DBADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 172D49C01B19FBC8001DBADA /* STNetWork */;
+			targetProxy = 172D49D71B19FBC9001DBADA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		172D49CA1B19FBC9001DBADA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				172D49CB1B19FBC9001DBADA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		172D49CF1B19FBC9001DBADA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				172D49D01B19FBC9001DBADA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		172D49DE1B19FBC9001DBADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		172D49DF1B19FBC9001DBADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		172D49E11B19FBC9001DBADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = STNetWorkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = STNetWork;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		172D49E21B19FBC9001DBADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = STNetWorkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = STNetWork;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		172D49E41B19FBC9001DBADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = STNetWorkDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = STNetWorkTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STNetWork.app/Stan";
+			};
+			name = Debug;
+		};
+		172D49E51B19FBC9001DBADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = STNetWorkDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = STNetWorkTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STNetWork.app/Stan";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		172D49BC1B19FBC8001DBADA /* Build configuration list for PBXProject "STNetWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172D49DE1B19FBC9001DBADA /* Debug */,
+				172D49DF1B19FBC9001DBADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		172D49E01B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172D49E11B19FBC9001DBADA /* Debug */,
+				172D49E21B19FBC9001DBADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		172D49E31B19FBC9001DBADA /* Build configuration list for PBXNativeTarget "STNetWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172D49E41B19FBC9001DBADA /* Debug */,
+				172D49E51B19FBC9001DBADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 172D49B91B19FBC8001DBADA /* Project object */;
+}
