@@ -27,7 +27,7 @@ STNetwork is an HTTP networking library written in Swift
     	case PUT = "PUT"
 	}
 
-These values can be passed as the first argument of the STNetWork.request method:
+These values can be passed as the first argument of the STNetwork.request method:
 	
 	STNetwork.request(HTTPMETHOD.GET.rawValue, url:"http://lcepy.github.io")
 	
@@ -85,7 +85,7 @@ POST Request With URL-Encoded Params
         println(error)
     }
     
-if your set Header Content-type equal "application/json",then STNetWork used NSJSONSerialization handler your params
+if you set Header Content-type equal "application/json",then STNetwork used NSJSONSerialization handler your params
 
 ##STNetworkResponse
 
