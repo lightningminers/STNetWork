@@ -2,7 +2,9 @@
 
 > Tag 0.0.1
 
-![](bike-233379_640.jpg)
+![](pheasant-729491_640.jpg)
+
+黄腹角雉 [百科](http://baike.baidu.com/link?url=v6n-sBPhvO3-3yY93OOmYA6Tw3PNNP4jSwU9smEIsxyve0tcyx4AZ-ghYj1DmZz6a8GmqL2vONb1O4qu-POmyq#3)
 
 ![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/precise-desktop-amd64_default.svg)
 ![](https://img.shields.io/github/license/mashape/apistatus.svg)
