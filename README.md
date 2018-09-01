@@ -1,10 +1,6 @@
-##STNetwork
+## STNetwork
 
 > Tag 0.0.1
-
-![](pheasant-729491_640.jpg)
-
-黄腹角雉 [百科](http://baike.baidu.com/link?url=v6n-sBPhvO3-3yY93OOmYA6Tw3PNNP4jSwU9smEIsxyve0tcyx4AZ-ghYj1DmZz6a8GmqL2vONb1O4qu-POmyq#3)
 
 ![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/precise-desktop-amd64_default.svg)
 ![](https://img.shields.io/github/license/mashape/apistatus.svg)
@@ -12,12 +8,12 @@
 
 STNetwork is an HTTP networking library written in Swift
 
-##Requirements
+## Requirements
 
 * iOS 7.0+
 * Xcode 6.3
 
-##HTTP Method
+## HTTP Method
 
 	public enum HTTPMETHOD:String{
     	case DELETE = "DELETE"
@@ -35,7 +31,7 @@ These values can be passed as the first argument of the STNetwork.request method
 	
 	STNetwork.request(HTTPMETHOD.POST.rawValue, url:"http://lcepy.github.io")
 	
-##File Struct
+## File Struct
 
 	public struct STFile{
     	let fileName:String!
@@ -57,7 +53,7 @@ These values can be passed as the first argument of the STNetwork.request method
     	}
 	}
 	
-##Params
+## Params
 
 GET Request With URL-Encoded Params
 
@@ -89,7 +85,7 @@ POST Request With URL-Encoded Params
     
 if you set Header Content-type equal "application/json",then STNetwork used NSJSONSerialization handler your params
 
-##STNetworkResponse
+## STNetworkResponse
 
 Response with handler
 
@@ -100,7 +96,7 @@ Response with handler
 * getAllResponseCookie 获取当前response的cookie（return header Set-Cookie）
 * getResponseCookie 根据key返回一个cookie值 (return cookie value -single)
 
-##STNetworkRequest
+## STNetworkRequest
 
 * setRequestHeader 设置header信息( set your request headers)
 * setRequestCookie 设置cookie (set cookie header Set-Cookie)
@@ -111,7 +107,7 @@ Response with handler
 * property STParams 不是文件数据的请用它的set方法
 * property STFileParams 文件数据请用它的set方法
 
-##Usage
+## Usage
 
 * request
 * upload
@@ -201,6 +197,6 @@ Response with handler
         }
     }
 
-##License
+## License
 
 STNetWork is released under the MIT license. See LICENSE for details.
